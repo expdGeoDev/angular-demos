@@ -11,6 +11,5 @@ import { CommonModule } from '@angular/common';
 	imports: [UIRouterModule, CommonModule],
 })
 export class AppComponent {
-	title = 'angular-demos';
 	protected readonly routerStates = routerStates;
 }
