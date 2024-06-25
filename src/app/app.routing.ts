@@ -5,6 +5,7 @@ import { InputDemoComponent } from './input-demo/input-demo.component';
 import { OutputDemoComponent } from './output-demo/output-demo.component';
 import { InterativeDemoComponent } from './interative-demo/interative-demo.component';
 import { ServicesDemoComponent } from './services-demo/services-demo.component';
+import { HttpClientDemoComponent } from './http-client-demo/http-client-demo.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
@@ -49,5 +50,11 @@ export const routerStates = [
 		url: '/services-demo',
 		component: ServicesDemoComponent,
 		label: 'Services',
+	},
+	{
+		name: 'http-client-demo',
+		url: '/http-client-demo',
+		component: HttpClientDemoComponent,
+		label: 'Http Client',
 	},
 ];
