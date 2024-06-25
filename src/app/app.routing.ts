@@ -2,6 +2,7 @@ import { TemplateDemoComponent } from './template-demo/template-demo.component';
 import { EventHandlingDemoComponent } from './event-handling-demo/event-handling-demo.component';
 import { TwoWayDemoComponent } from './two-way-demo/two-way-demo.component';
 import { InputDemoComponent } from './input-demo/input-demo.component';
+import { OutputDemoComponent } from './output-demo/output-demo.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
@@ -22,6 +23,12 @@ export const routerStates = [
 		url: '/input-demo',
 		component: InputDemoComponent,
 		label: '@Input()',
+	},
+	{
+		name: 'output-demo',
+		url: '/output-demo',
+		component: OutputDemoComponent,
+		label: '@Output()',
 	},
 	{
 		name: 'two-way-demo',
