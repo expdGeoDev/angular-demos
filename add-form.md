@@ -14,6 +14,8 @@
 	- Use `src/app/coffee-data.service`
 - User is informed about newly added coffee data
   - This should not be part of the form component, but a separate component
+- The design/CSS does NOT have to follow any of the prototypes that we came up with, but...
+  It also could follow one of those prototypes. You should feel free to be creative about look and feel.
 
 ### Better
 
