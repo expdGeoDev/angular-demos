@@ -1,6 +1,6 @@
-import { Route03Component } from './route03.component';
 import { TemplateDemoComponent } from './template-demo/template-demo.component';
 import { EventHandlingDemoComponent } from './event-handling-demo/event-handling-demo.component';
+import { TwoWayDemoComponent } from './two-way-demo/two-way-demo.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
@@ -17,9 +17,9 @@ export const routerStates = [
 		label: 'Event Handling',
 	},
 	{
-		name: 'route-03',
-		url: 'route03',
-		component: Route03Component,
-		label: 'Route 3',
+		name: 'two-way-demo',
+		url: '/two-way-demo',
+		component: TwoWayDemoComponent,
+		label: 'Two-Way Data Binding',
 	},
 ];
