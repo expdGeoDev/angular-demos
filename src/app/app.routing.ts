@@ -3,6 +3,7 @@ import { EventHandlingDemoComponent } from './event-handling-demo/event-handling
 import { TwoWayDemoComponent } from './two-way-demo/two-way-demo.component';
 import { InputDemoComponent } from './input-demo/input-demo.component';
 import { OutputDemoComponent } from './output-demo/output-demo.component';
+import { InterativeDemoComponent } from './interative-demo/interative-demo.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
@@ -35,5 +36,11 @@ export const routerStates = [
 		url: '/two-way-demo',
 		component: TwoWayDemoComponent,
 		label: 'Two-Way Data Binding',
+	},
+	{
+		name: 'iterative-demo',
+		url: '/iterative-demo',
+		component: InterativeDemoComponent,
+		label: 'Iterating over data',
 	},
 ];
