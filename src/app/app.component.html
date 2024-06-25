@@ -8,28 +8,12 @@
 	<div class="row">
 		<div class="col">
 			<ul class="list-unstyled">
-				<li>
+				<li *ngFor="let route of routerStates">
 					<a
-						uiSref="route01"
+						[uiSref]="route.name"
 						uiSrefActive="active"
 					>
-						Route 1
-					</a>
-				</li>
-				<li>
-					<a
-						uiSref="route02"
-						uiSrefActive="active"
-					>
-						Route 2
-					</a>
-				</li>
-				<li>
-					<a
-						uiSref="route03"
-						uiSrefActive="active"
-					>
-						Route 3
+						{{ route.label }}
 					</a>
 				</li>
 			</ul>
