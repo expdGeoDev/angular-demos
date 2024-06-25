@@ -5,4 +5,10 @@
 	} @else {
 		<p>No one to greet yet</p>
 	}
+
+	@if (inputPerson !== null) {
+		<p>Hello, {{ inputPerson.firstName }} {{ inputPerson.lastName }}</p>
+	} @else {
+		<p>No person passed</p>
+	}
 </div>

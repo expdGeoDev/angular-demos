@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Person } from './input-parent.component';
 
 @Component({
 	selector: 'app-input-child',
@@ -13,6 +14,10 @@ import { Component, Input } from '@angular/core';
 	`,
 })
 export class InputChildComponent {
+	// config: alias, required, transform
 	@Input()
 	personName = '';
+
+	@Input()
+	inputPerson: Person | null = null;
 }

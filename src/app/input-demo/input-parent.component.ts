@@ -14,10 +14,17 @@ import { InputChildComponent } from './input-child.component';
 	`,
 })
 export class InputParentComponent {
-	person = {
+	person: Person = {
 		firstName: 'Jack',
 		lastName: 'Walsh',
 		city: 'Chicago',
 		state: 'Illinois',
 	};
+}
+
+export interface Person {
+	firstName: string;
+	lastName: string;
+	city: string;
+	state: string;
 }
