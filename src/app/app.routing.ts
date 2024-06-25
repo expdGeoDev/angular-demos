@@ -1,14 +1,14 @@
-import { Route01Component } from './route01.component';
 import { Route02Component } from './route02.component';
 import { Route03Component } from './route03.component';
+import { TemplateDemoComponent } from './template-demo/template-demo.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
 	{
-		name: 'route-01',
-		url: 'route01',
-		component: Route01Component,
-		label: 'Route 1',
+		name: 'template-demo',
+		url: 'template-demo',
+		component: TemplateDemoComponent,
+		label: 'Template Demo',
 	},
 	{
 		name: 'route-02',
