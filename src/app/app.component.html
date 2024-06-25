@@ -1,2 +1,41 @@
-<h1>Angular demos</h1>
-<p>Just a placeholder for right now</p>
+<main class="container-fluid">
+	<header class="row">
+		<div class="col">
+			<h1>Angular Demos</h1>
+			<hr />
+		</div>
+	</header>
+	<div class="row">
+		<div class="col">
+			<ul class="list-unstyled">
+				<li>
+					<a
+						uiSref="route01"
+						uiSrefActive="active"
+					>
+						Route 1
+					</a>
+				</li>
+				<li>
+					<a
+						uiSref="route02"
+						uiSrefActive="active"
+					>
+						Route 2
+					</a>
+				</li>
+				<li>
+					<a
+						uiSref="route03"
+						uiSrefActive="active"
+					>
+						Route 3
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col">
+			<ui-view></ui-view>
+		</div>
+	</div>
+</main>
