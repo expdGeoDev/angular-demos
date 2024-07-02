@@ -7,8 +7,9 @@ import { InterativeDemoComponent } from './interative-demo/interative-demo.compo
 import { ServicesDemoComponent } from './services-demo/services-demo.component';
 import { HttpClientDemoComponent } from './http-client-demo/http-client-demo.component';
 import { CustomGreetingComponent } from './custom-greeting/custom-greeting.component';
-import { AddCoffeeFormComponent } from './add-coffee-form/add-coffee-form.component';
+import { AddCoffeeFormComponent } from './coffee-container/add-coffee-form/add-coffee-form.component';
 import { DemosContainerComponent } from './demos-container.component';
+import { CoffeeContainerComponent } from './coffee-container/coffee-container.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
@@ -70,10 +71,14 @@ export const routerStates = [
 
 export const coffeeRoutes = [
 	{
-		name: 'coffeeApp.add-coffee-form',
+		name: 'coffeeApp',
+		url: '/coffee-app',
+		component: CoffeeContainerComponent,
+	},
+	{
+		name: 'coffeeApp.addCoffeeForm',
 		url: '/add-coffee',
 		component: AddCoffeeFormComponent,
-		label: 'Add Coffee',
 	},
 ];
 
