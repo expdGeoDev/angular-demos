@@ -4,12 +4,16 @@ import { TwoWayDemoComponent } from './two-way-demo/two-way-demo.component';
 import { InputDemoComponent } from './input-demo/input-demo.component';
 import { OutputDemoComponent } from './output-demo/output-demo.component';
 import { InterativeDemoComponent } from './interative-demo/interative-demo.component';
-import { ServicesDemoComponent } from './services-demo/services-demo.component';
 import { HttpClientDemoComponent } from './http-client-demo/http-client-demo.component';
 import { CustomGreetingComponent } from './custom-greeting/custom-greeting.component';
 import { AddCoffeeFormComponent } from './coffee-container/add-coffee-form/add-coffee-form.component';
 import { DemosContainerComponent } from './demos-container.component';
 import { CoffeeContainerComponent } from './coffee-container/coffee-container.component';
+import { ServicesDemosComponent } from './services-demos/services-demos.component';
+import { ServicesBasicComponent } from './services-demos/services-basic.component';
+import { ServicesUseClassComponent } from './services-demos/services-use-class.component';
+import { ServicesUseFactoryComponent } from './services-demos/services-use-factory.component';
+import { ServicesUseValueComponent } from './services-demos/services-use-value.component';
 
 // Technically the type is Ng2StateDeclaration[]
 export const routerStates = [
@@ -50,9 +54,9 @@ export const routerStates = [
 		label: 'Iterating over data',
 	},
 	{
-		name: 'angularDemos.services-demo',
-		url: '/services-demo',
-		component: ServicesDemoComponent,
+		name: 'angularDemos.services-demos',
+		url: '/services-demos',
+		component: ServicesDemosComponent,
 		label: 'Services',
 	},
 	{
@@ -87,5 +91,25 @@ export const otherRoutes = [
 		name: 'angularDemos',
 		url: '/angular-demos',
 		component: DemosContainerComponent,
+	},
+	{
+		name: 'angularDemos.services-demos.basic',
+		url: '/basic',
+		component: ServicesBasicComponent,
+	},
+	{
+		name: 'angularDemos.services-demos.useClass',
+		url: '/use-class',
+		component: ServicesUseClassComponent,
+	},
+	{
+		name: 'angularDemos.services-demos.useFactory',
+		url: '/use-factory',
+		component: ServicesUseFactoryComponent,
+	},
+	{
+		name: 'angularDemos.services-demos.useValue',
+		url: '/use-value',
+		component: ServicesUseValueComponent,
 	},
 ];
